@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageTags>netatmo; httpclient; </PackageTags>
+    <RepositoryUrl>https://github.com/Jungbluth11/NetatmoClient</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Jungbluth11/NetatmoClient</PackageProjectUrl>
+    <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <Description>An easy to use http client for Netatmo.</Description>
+    <Title>NetatmoClient</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="4.0.2" />
+    <PackageReference Include="Microsoft.Kiota.Bundle" Version="1.21.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ReadMe.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
