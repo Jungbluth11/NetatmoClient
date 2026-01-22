@@ -12,8 +12,8 @@ Example:
 
 	var client = new NetatmoClient(clientId, clientSecret, refreshToken);
 
-	NAStationDataResponse? stations = await client.Getstationsdata.GetAsync();
-	foreach (NAMain device in stations.Body.Devices)
+	var stations = await client.Getstationsdata.GetAsync();
+	foreach (var device in stations.Body.Devices)
 	{
 		Console.WriteLine($"Station: {device.StationName}");
 		Console.WriteLine($"Temperature: {device.DashboardData?.Temperature}°C");
